@@ -31,7 +31,7 @@ const AppreciationSection = () => {
               </div>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Winners will be awarded <strong className="text-foreground">certificates of achievement</strong> and <strong className="text-foreground">medals</strong> on the second day of the event.
+                Winners will be awarded <strong className="text-foreground">certificates of achievement</strong> and <strong className="text-foreground">Trophies</strong> on the second day of the event.
               </p>
               
               <div className="mt-6 flex gap-3">

@@ -7,11 +7,11 @@ const NonTechnicalEventsSection = () => {
       icon: Music,
       title: "Dance Performance",
       duration: "3-5 minutes",
-      teamSize: "4-6 members",
+      teamSize: "6-8 members",
       description: "Express yourself through movement and rhythm in this vibrant dance competition.",
       rules: [
         "Performance duration: 3-5 minutes",
-        "Team size: 4-6 members",
+        "Team size: 6-8 members",
         "Submission 24/09/25 before 11pm",
         "Costumes and props encouraged",
         "Judged on choreography, creativity, and stage presence",

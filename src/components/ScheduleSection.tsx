@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button";
 const ScheduleSection = () => {
   const day1Schedule = [
     {
-      time: "09:00 AM",
-      title: "Registration Opens",
+      time: "08:30 AM",
+      title: "Onspot registration",
       description: "Welcome participants and team check-in",
       icon: Users,
       status: "completed"
     },
     {
-      time: "10:00 AM",
+      time: "09:30 AM",
       title: "Opening Ceremony",
       description: "Event inauguration and rules briefing",
       icon: MapPin,
@@ -43,14 +43,14 @@ const ScheduleSection = () => {
 
   const day2Schedule = [
     {
-      time: "09:00 AM",
-      title: "Registration Opens",
+      time: "08:30 AM",
+      title: "Onspot registration",
       description: "Welcome participants and team check-in",
       icon: Users,
       status: "completed"
     },
     {
-      time: "10:00 AM",
+      time: "09:30 AM",
       title: "Opening Ceremony",
       description: "Event inauguration and rules briefing",
       icon: MapPin,
