@@ -265,6 +265,21 @@ const ScheduleSection = () => {
           </div>
         </div>
 
+        {/* Important Note */}
+        <div className="scroll-fade-in mb-8">
+          <div className="relative p-6 bg-gradient-to-r from-accent/10 to-highlight/10 rounded-2xl border-2 border-accent/30 backdrop-blur-sm">
+            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-accent/20 via-highlight/20 to-primary/20 blur-sm animate-pulse"></div>
+            <div className="relative z-10">
+              <h3 className="text-xl font-display font-bold mb-3 bg-gradient-to-r from-accent to-highlight bg-clip-text text-transparent">
+                📋 Important Registration Note
+              </h3>
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                <strong className="text-foreground">Important Note:</strong> If you wish to participate in another event on the same or a different day, you may submit another response using the same payment screenshot. Please note that you can only participate in events that are not being conducted at the same time. Event timings can be checked on the official website.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Pro Registration Box */}
         <div className="scroll-fade-in">
           <div className="relative p-8 md:p-12 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 rounded-3xl border-2 border-primary/30 backdrop-blur-sm shadow-2xl shadow-primary/20 group">
