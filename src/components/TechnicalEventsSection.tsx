@@ -72,6 +72,14 @@ const TechnicalEventsSection = () => {
         "IEEE format required for paper submission",
         "Judges' decision is final."
       ],
+      pptTopics: [
+        "Less-Code / Non-code platforms in 2025",
+        "The Role of 5G / 6G in the future",
+        "Internet of Things (IoT): Future Trends",
+        "The Rise of Generative AI and its Ethical Concerns",
+        "The Future of Digital Payments in India (UPI 2.0, CBDC, etc.)",
+        "Edge Computing vs. Cloud Computing"
+      ],
       venue: "Dr. MRS SAKUNTHALA RANGARAJAN, MBBS. MEMORIAL HALL",
       time: "10:00AM to 12:00PM",
       color: "border-highlight/30 hover:border-highlight"
@@ -214,25 +222,46 @@ const TechnicalEventsSection = () => {
                          ))}
                        </ul>
                        
-                        {/* Add Rounds section for Hackathon */}
-                        {event.title === "Hackathon" && (
-                          <div className="mt-6 min-w-0">
-                            <h4 className="font-semibold text-foreground mb-3">Rounds:</h4>
-                            <ul 
-                              className="m-0 p-[10px_16px_16px_22px] sm:pl-5 leading-[1.55] sm:leading-[1.6] overflow-wrap-anywhere whitespace-normal list-outside" 
-                              style={{ listStylePosition: 'outside' }}
-                            >
-                              <li className="flex items-start gap-3 text-[0.95rem] sm:text-base mb-[10px]">
-                                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                                <span className="text-muted-foreground min-w-0 break-words">Round 1: 15 labs CTF challenge; top teams qualify for next round.</span>
-                              </li>
-                              <li className="flex items-start gap-3 text-[0.95rem] sm:text-base mb-0">
-                                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                                <span className="text-muted-foreground min-w-0 break-words">Round 2: Team discussion to solve coding problems (top 3 teams selected).</span>
-                              </li>
-                            </ul>
-                          </div>
-                        )}
+                         {/* Add Rounds section for Hackathon */}
+                         {event.title === "Hackathon" && (
+                           <div className="mt-6 min-w-0">
+                             <h4 className="font-semibold text-foreground mb-3">Rounds:</h4>
+                             <ul 
+                               className="m-0 p-[10px_16px_16px_22px] sm:pl-5 leading-[1.55] sm:leading-[1.6] overflow-wrap-anywhere whitespace-normal list-outside" 
+                               style={{ listStylePosition: 'outside' }}
+                             >
+                               <li className="flex items-start gap-3 text-[0.95rem] sm:text-base mb-[10px]">
+                                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                                 <span className="text-muted-foreground min-w-0 break-words">Round 1: 15 labs CTF challenge; top teams qualify for next round.</span>
+                               </li>
+                               <li className="flex items-start gap-3 text-[0.95rem] sm:text-base mb-0">
+                                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                                 <span className="text-muted-foreground min-w-0 break-words">Round 2: Team discussion to solve coding problems (top 3 teams selected).</span>
+                               </li>
+                             </ul>
+                           </div>
+                         )}
+
+                         {/* Add PPT Topics section for Paper Presentation */}
+                         {event.title === "Paper Presentation" && event.pptTopics && (
+                           <div className="mt-6 min-w-0">
+                             <h4 className="font-semibold text-foreground mb-3">PPT Topics:</h4>
+                             <ul 
+                               className="m-0 p-[10px_16px_16px_22px] sm:pl-5 leading-[1.55] sm:leading-[1.6] overflow-wrap-anywhere whitespace-normal list-outside" 
+                               style={{ listStylePosition: 'outside' }}
+                             >
+                               {event.pptTopics.map((topic, topicIndex) => (
+                                 <li 
+                                   key={topicIndex}
+                                   className={`flex items-start gap-3 text-[0.95rem] sm:text-base ${topicIndex < event.pptTopics.length - 1 ? 'mb-[10px]' : 'mb-0'}`}
+                                 >
+                                   <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0" />
+                                   <span className="text-muted-foreground min-w-0 break-words">{topic}</span>
+                                 </li>
+                               ))}
+                             </ul>
+                           </div>
+                         )}
                         
                         {/* Venue and Time Section */}
                         <div className="mt-6 p-4 bg-muted/30 rounded-xl border border-primary/20">
