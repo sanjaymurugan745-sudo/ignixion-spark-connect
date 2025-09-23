@@ -69,7 +69,7 @@ const TechnicalEventsSection = () => {
         "Project should be submitted on or before 23/09/25 till 11 pm",
         "10-15 minute presentation + 5 minute Q&A",
         "Judged on quality of research, clarity of presentation, and originality",
-        "IEEE format required for paper submission",
+        "PDF OR PPT is required for Submission",
         "Judges' decision is final."
       ],
       pptTopics: [
